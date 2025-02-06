@@ -1,0 +1,45 @@
+/* Styling Navbar */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Menjadikan navbar transparan */
+.navbar.bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+/* Navbar saat di-scroll */
+.navbar.scrolled {
+    background-color: white !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menjadikan teks hitam saat di-scroll */
+.navbar.scrolled .nav-link {
+    color: black !important;
+}
+
+/* Memposisikan logo di tengah */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Menjadikan teks menu putih di awal */
+.navbar .nav-link {
+    color: rgb(0, 0, 0) !important;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 991px) {
+    .navbar-brand {
+        position: static;
+        transform: none;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+}
